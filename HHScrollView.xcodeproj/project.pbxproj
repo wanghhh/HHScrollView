@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B121C2A1F408EAF00F418A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B121C291F408EAF00F418A3 /* AppDelegate.swift */; };
+		5B121C2C1F408EAF00F418A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B121C2B1F408EAF00F418A3 /* ViewController.swift */; };
+		5B121C2F1F408EAF00F418A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B121C2D1F408EAF00F418A3 /* Main.storyboard */; };
+		5B121C311F408EAF00F418A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B121C301F408EAF00F418A3 /* Assets.xcassets */; };
+		5B121C341F408EB000F418A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B121C321F408EB000F418A3 /* LaunchScreen.storyboard */; };
+		5B121C3F1F408EB000F418A3 /* HHScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B121C3E1F408EB000F418A3 /* HHScrollViewTests.swift */; };
+		5B121C4A1F408EB000F418A3 /* HHScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B121C491F408EB000F418A3 /* HHScrollViewUITests.swift */; };
+		5B121C591F40907000F418A3 /* HHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B121C581F40907000F418A3 /* HHScrollView.swift */; };
+		D02F08E1F6D4E75D2A38490E /* libPods-HHScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CBA166496B397F9CD48D67 /* libPods-HHScrollView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B121C3B1F408EB000F418A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B121C1E1F408EAF00F418A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B121C251F408EAF00F418A3;
+			remoteInfo = HHScrollView;
+		};
+		5B121C461F408EB000F418A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B121C1E1F408EAF00F418A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B121C251F408EAF00F418A3;
+			remoteInfo = HHScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47CBA166496B397F9CD48D67 /* libPods-HHScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HHScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B017DDC1F44883D00F72A44 /* BridingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridingHeader.h; sourceTree = "<group>"; };
+		5B121C261F408EAF00F418A3 /* HHScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B121C291F408EAF00F418A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B121C2B1F408EAF00F418A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B121C2E1F408EAF00F418A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B121C301F408EAF00F418A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B121C331F408EB000F418A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B121C351F408EB000F418A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B121C3A1F408EB000F418A3 /* HHScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B121C3E1F408EB000F418A3 /* HHScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHScrollViewTests.swift; sourceTree = "<group>"; };
+		5B121C401F408EB000F418A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B121C451F408EB000F418A3 /* HHScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B121C491F408EB000F418A3 /* HHScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHScrollViewUITests.swift; sourceTree = "<group>"; };
+		5B121C4B1F408EB000F418A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B121C581F40907000F418A3 /* HHScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHScrollView.swift; sourceTree = "<group>"; };
+		C88FA45BE430199D7709A7AF /* Pods-HHScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHScrollView/Pods-HHScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1C0D569FE918E6FCC13E47 /* Pods-HHScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHScrollView/Pods-HHScrollView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B121C231F408EAF00F418A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D02F08E1F6D4E75D2A38490E /* libPods-HHScrollView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B121C371F408EB000F418A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B121C421F408EB000F418A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08894526518F2DB4EB4F9B5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C88FA45BE430199D7709A7AF /* Pods-HHScrollView.debug.xcconfig */,
+				EE1C0D569FE918E6FCC13E47 /* Pods-HHScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B121C1D1F408EAF00F418A3 = {
+			isa = PBXGroup;
+			children = (
+				5B121C281F408EAF00F418A3 /* HHScrollView */,
+				5B121C3D1F408EB000F418A3 /* HHScrollViewTests */,
+				5B121C481F408EB000F418A3 /* HHScrollViewUITests */,
+				5B121C271F408EAF00F418A3 /* Products */,
+				08894526518F2DB4EB4F9B5A /* Pods */,
+				A322476703C31CF90294FCE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B121C271F408EAF00F418A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B121C261F408EAF00F418A3 /* HHScrollView.app */,
+				5B121C3A1F408EB000F418A3 /* HHScrollViewTests.xctest */,
+				5B121C451F408EB000F418A3 /* HHScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B121C281F408EAF00F418A3 /* HHScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5B121C571F40902C00F418A3 /* HHScrollView */,
+				5B121C291F408EAF00F418A3 /* AppDelegate.swift */,
+				5B121C2B1F408EAF00F418A3 /* ViewController.swift */,
+				5B121C2D1F408EAF00F418A3 /* Main.storyboard */,
+				5B121C301F408EAF00F418A3 /* Assets.xcassets */,
+				5B121C321F408EB000F418A3 /* LaunchScreen.storyboard */,
+				5B121C351F408EB000F418A3 /* Info.plist */,
+				5B017DDC1F44883D00F72A44 /* BridingHeader.h */,
+			);
+			path = HHScrollView;
+			sourceTree = "<group>";
+		};
+		5B121C3D1F408EB000F418A3 /* HHScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B121C3E1F408EB000F418A3 /* HHScrollViewTests.swift */,
+				5B121C401F408EB000F418A3 /* Info.plist */,
+			);
+			path = HHScrollViewTests;
+			sourceTree = "<group>";
+		};
+		5B121C481F408EB000F418A3 /* HHScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B121C491F408EB000F418A3 /* HHScrollViewUITests.swift */,
+				5B121C4B1F408EB000F418A3 /* Info.plist */,
+			);
+			path = HHScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		5B121C571F40902C00F418A3 /* HHScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5B121C581F40907000F418A3 /* HHScrollView.swift */,
+			);
+			path = HHScrollView;
+			sourceTree = "<group>";
+		};
+		A322476703C31CF90294FCE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47CBA166496B397F9CD48D67 /* libPods-HHScrollView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B121C251F408EAF00F418A3 /* HHScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B121C4E1F408EB000F418A3 /* Build configuration list for PBXNativeTarget "HHScrollView" */;
+			buildPhases = (
+				D610C7739E4904824F9D88FC /* [CP] Check Pods Manifest.lock */,
+				5B121C221F408EAF00F418A3 /* Sources */,
+				5B121C231F408EAF00F418A3 /* Frameworks */,
+				5B121C241F408EAF00F418A3 /* Resources */,
+				3FB64DAC8DD9E33549F5C4A8 /* [CP] Embed Pods Frameworks */,
+				52CA26B9CD42F171750B4283 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHScrollView;
+			productName = HHScrollView;
+			productReference = 5B121C261F408EAF00F418A3 /* HHScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B121C391F408EB000F418A3 /* HHScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B121C511F408EB000F418A3 /* Build configuration list for PBXNativeTarget "HHScrollViewTests" */;
+			buildPhases = (
+				5B121C361F408EB000F418A3 /* Sources */,
+				5B121C371F408EB000F418A3 /* Frameworks */,
+				5B121C381F408EB000F418A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B121C3C1F408EB000F418A3 /* PBXTargetDependency */,
+			);
+			name = HHScrollViewTests;
+			productName = HHScrollViewTests;
+			productReference = 5B121C3A1F408EB000F418A3 /* HHScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B121C441F408EB000F418A3 /* HHScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B121C541F408EB000F418A3 /* Build configuration list for PBXNativeTarget "HHScrollViewUITests" */;
+			buildPhases = (
+				5B121C411F408EB000F418A3 /* Sources */,
+				5B121C421F408EB000F418A3 /* Frameworks */,
+				5B121C431F408EB000F418A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B121C471F408EB000F418A3 /* PBXTargetDependency */,
+			);
+			name = HHScrollViewUITests;
+			productName = HHScrollViewUITests;
+			productReference = 5B121C451F408EB000F418A3 /* HHScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B121C1E1F408EAF00F418A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = onePieceDW;
+				TargetAttributes = {
+					5B121C251F408EAF00F418A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZDEZ7ZNC27;
+						ProvisioningStyle = Automatic;
+					};
+					5B121C391F408EB000F418A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZDEZ7ZNC27;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B121C251F408EAF00F418A3;
+					};
+					5B121C441F408EB000F418A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZDEZ7ZNC27;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B121C251F408EAF00F418A3;
+					};
+				};
+			};
+			buildConfigurationList = 5B121C211F408EAF00F418A3 /* Build configuration list for PBXProject "HHScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B121C1D1F408EAF00F418A3;
+			productRefGroup = 5B121C271F408EAF00F418A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B121C251F408EAF00F418A3 /* HHScrollView */,
+				5B121C391F408EB000F418A3 /* HHScrollViewTests */,
+				5B121C441F408EB000F418A3 /* HHScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B121C241F408EAF00F418A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B121C341F408EB000F418A3 /* LaunchScreen.storyboard in Resources */,
+				5B121C311F408EAF00F418A3 /* Assets.xcassets in Resources */,
+				5B121C2F1F408EAF00F418A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B121C381F408EB000F418A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B121C431F408EB000F418A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FB64DAC8DD9E33549F5C4A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHScrollView/Pods-HHScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52CA26B9CD42F171750B4283 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHScrollView/Pods-HHScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D610C7739E4904824F9D88FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B121C221F408EAF00F418A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B121C2C1F408EAF00F418A3 /* ViewController.swift in Sources */,
+				5B121C591F40907000F418A3 /* HHScrollView.swift in Sources */,
+				5B121C2A1F408EAF00F418A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B121C361F408EB000F418A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B121C3F1F408EB000F418A3 /* HHScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B121C411F408EB000F418A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B121C4A1F408EB000F418A3 /* HHScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B121C3C1F408EB000F418A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B121C251F408EAF00F418A3 /* HHScrollView */;
+			targetProxy = 5B121C3B1F408EB000F418A3 /* PBXContainerItemProxy */;
+		};
+		5B121C471F408EB000F418A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B121C251F408EAF00F418A3 /* HHScrollView */;
+			targetProxy = 5B121C461F408EB000F418A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B121C2D1F408EAF00F418A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B121C2E1F408EAF00F418A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B121C321F408EB000F418A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B121C331F408EB000F418A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B121C4C1F408EB000F418A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B121C4D1F408EB000F418A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B121C4F1F408EB000F418A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88FA45BE430199D7709A7AF /* Pods-HHScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZDEZ7ZNC27;
+				INFOPLIST_FILE = HHScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onePieceDW.HHScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HHScrollView/BridingHeader.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5B121C501F408EB000F418A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE1C0D569FE918E6FCC13E47 /* Pods-HHScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZDEZ7ZNC27;
+				INFOPLIST_FILE = HHScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onePieceDW.HHScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HHScrollView/BridingHeader.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5B121C521F408EB000F418A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZDEZ7ZNC27;
+				INFOPLIST_FILE = HHScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onePieceDW.HHScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHScrollView.app/HHScrollView";
+			};
+			name = Debug;
+		};
+		5B121C531F408EB000F418A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZDEZ7ZNC27;
+				INFOPLIST_FILE = HHScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onePieceDW.HHScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HHScrollView.app/HHScrollView";
+			};
+			name = Release;
+		};
+		5B121C551F408EB000F418A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZDEZ7ZNC27;
+				INFOPLIST_FILE = HHScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onePieceDW.HHScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HHScrollView;
+			};
+			name = Debug;
+		};
+		5B121C561F408EB000F418A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZDEZ7ZNC27;
+				INFOPLIST_FILE = HHScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onePieceDW.HHScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HHScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B121C211F408EAF00F418A3 /* Build configuration list for PBXProject "HHScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B121C4C1F408EB000F418A3 /* Debug */,
+				5B121C4D1F408EB000F418A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B121C4E1F408EB000F418A3 /* Build configuration list for PBXNativeTarget "HHScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B121C4F1F408EB000F418A3 /* Debug */,
+				5B121C501F408EB000F418A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B121C511F408EB000F418A3 /* Build configuration list for PBXNativeTarget "HHScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B121C521F408EB000F418A3 /* Debug */,
+				5B121C531F408EB000F418A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B121C541F408EB000F418A3 /* Build configuration list for PBXNativeTarget "HHScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B121C551F408EB000F418A3 /* Debug */,
+				5B121C561F408EB000F418A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B121C1E1F408EAF00F418A3 /* Project object */;
+}
