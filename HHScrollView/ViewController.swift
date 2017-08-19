@@ -23,6 +23,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //2.通过frame，后根据网络数据设置imgUrls
         let scrollView = HHScrollView.init(frame: CGRect.init(x: 0, y: 64, width: UIScreen.main.bounds.width, height: 200))
         //设置数据源（图片urlStr）
+        //加载本地图片
+//        scrollView.isFromNet = false
+//        scrollView.imgUrls = ["ic_banner01","ic_banner02","ic_banner03"]
+        //默认加载网络图片
         scrollView.imgUrls = imageDataSource
         //设置代理，根据需要要不要监听图片点击
         scrollView.hhScrollViewDelegae = self
