@@ -4,13 +4,13 @@
 //
 //  Created by 王龙辉 on 2017/8/13.
 //  Copyright © 2017年 onePieceDW. All rights reserved.
-//
+//  http://www.jianshu.com/p/fee4d10feefd
 
 import UIKit
-
+fileprivate let placeholder:String = "ic_bannerPlace"
 @objc protocol HHScrollViewDelegate:NSObjectProtocol {
     //点击代理方法
-  @objc optional func hhScrollView(_ scrollView: HHScrollView, didSelectRowAt index: NSInteger)
+    @objc optional func hhScrollView(_ scrollView: HHScrollView, didSelectRowAt index: NSInteger)
 }
 
 fileprivate let collectionViewCellId = "collectionViewCellId"
@@ -43,7 +43,7 @@ class HHScrollView: UICollectionView,UICollectionViewDelegate,UICollectionViewDa
     var isFromNet:Bool = true
     
     //占位图
-    var placeholderImage:String = "ic_place"
+    var placeholderImage:String = placeholder
     
     //设置图片资源url字符串。
     var imgUrls = NSArray(){
@@ -61,7 +61,7 @@ class HHScrollView: UICollectionView,UICollectionViewDelegate,UICollectionViewDa
     
     convenience init(frame:CGRect,imageUrls:NSArray) {
         self.init(frame: frame, collectionViewLayout: HHCollectionViewFlowLayout.init())
-         imgUrls = imageUrls
+        imgUrls = imageUrls
     }
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
@@ -89,12 +89,12 @@ class HHScrollView: UICollectionView,UICollectionViewDelegate,UICollectionViewDa
     //MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //itemNum 设置为图片数组的n倍数(n>1)，当未设置imgUrls时，随便返回一个数6
-        return imgUrls.count > 0 ? imgUrls.count*2 : 6
+        return imgUrls.count > 0 ? imgUrls.count*1000 : 6
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:HHCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionViewCellId, for: indexPath) as! HHCollectionViewCell
-         cell.backgroundColor = UIColor.lightGray
+        cell.backgroundColor = UIColor.lightGray
         
         if imgUrls.count > 0 {
             if let urlStr = self.imgUrls[indexPath.row % imgUrls.count] as? String {
@@ -113,7 +113,11 @@ class HHScrollView: UICollectionView,UICollectionViewDelegate,UICollectionViewDa
     
     //MARK: - UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        hhScrollViewDelegae?.hhScrollView!(self, didSelectRowAt: indexPath.row % imgUrls.count)
+        if imgUrls.count != 0 {
+            hhScrollViewDelegae?.hhScrollView!(self, didSelectRowAt: indexPath.row % imgUrls.count)
+        }else{
+            print("图片数组为空！")
+        }
     }
     
     //MARK: - UIScrollViewDelegate
@@ -130,9 +134,9 @@ class HHScrollView: UICollectionView,UICollectionViewDelegate,UICollectionViewDa
             }
         }
         //跳转方式一：
-//        let indexpath = NSIndexPath.init(row: offset, section: 0)
-//        //滚动位置
-//        self.scrollToItem(at: indexpath as IndexPath, at: .left, animated: false)
+        //        let indexpath = NSIndexPath.init(row: offset, section: 0)
+        //        //滚动位置
+        //        self.scrollToItem(at: indexpath as IndexPath, at: .left, animated: false)
         //跳转方式二：
         scrollView.contentOffset = CGPoint.init(x: CGFloat(offset) * scrollView.bounds.size.width, y: 0)
     }
@@ -160,7 +164,7 @@ class HHScrollView: UICollectionView,UICollectionViewDelegate,UICollectionViewDa
         pageControl?.currentPageIndicatorTintColor = currentPageControlColor ?? UIColor.orange
         pageControl?.numberOfPages = imgUrls.count
         pageControl?.currentPage = 0
-
+        
         //一定要将指示器添加到superview上
         self.superview?.addSubview(pageControl!)
     }
@@ -234,6 +238,7 @@ class HHCollectionViewCell:UICollectionViewCell{
         //通过打印可以看到此时cell的frame就是我们在flowLayout中设置的结果
         print("self.collectionView:\(String(describing: self))")
         imageView = UIImageView.init(frame: self.bounds)
+        imageView?.image = UIImage.init(named: placeholder)
         imageView?.contentMode = .scaleAspectFill
         contentView.addSubview(imageView!)
     }
